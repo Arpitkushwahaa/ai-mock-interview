@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             <h4>Platform</h4>
             <ul>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/interview">Start Interview</Link></li>
+              <li><Link href="/interview" className="text-primary-200 font-medium hover:text-primary-100 transition-all">Start Interview</Link></li>
               <li><Link href="/">My Interviews</Link></li>
             </ul>
           </div>
