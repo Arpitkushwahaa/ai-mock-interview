@@ -23,11 +23,11 @@ async function Home() {
 
   return (
     <>
-      <section className="card-cta">
+      <section className="card-cta bg-mesh">
         <div className="flex flex-col gap-6 max-w-lg">
-          <h2>Get Interview-Ready with AI-Powered Practice & Feedback</h2>
-          <p className="text-lg">
-            Practice real interview questions & get instant feedback
+          <h1 className="text-4xl font-bold">Get Interview-Ready with AI-Powered Practice</h1>
+          <p className="text-lg text-light-100/90">
+            Master real interview questions & receive personalized feedback instantly
           </p>
 
           <Button asChild className="btn-start-interview max-sm:w-full">
@@ -37,14 +37,14 @@ async function Home() {
 
         <Image
           src="/robot.png"
-          alt="robo-dude"
+          alt="AI Interview Assistant"
           width={400}
           height={400}
-          className="max-sm:hidden"
+          className="max-sm:hidden animate-float"
         />
       </section>
 
-      <section className="flex flex-col gap-6 mt-8">
+      <section className="flex flex-col gap-6 mt-12">
         <h2>Your Interviews</h2>
 
         <div className="interviews-section">
@@ -61,12 +61,12 @@ async function Home() {
               />
             ))
           ) : (
-            <p>You haven&apos;t taken any interviews yet</p>
+            <p className="text-light-100/70">You haven&apos;t taken any interviews yet</p>
           )}
         </div>
       </section>
 
-      <section className="flex flex-col gap-6 mt-8">
+      <section className="flex flex-col gap-6 mt-12">
         <h2>Take Interviews</h2>
 
         <div className="interviews-section">
@@ -83,7 +83,7 @@ async function Home() {
               />
             ))
           ) : (
-            <p>There are no interviews available</p>
+            <p className="text-light-100/70">There are no interviews available</p>
           )}
         </div>
       </section>
